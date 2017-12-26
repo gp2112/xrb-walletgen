@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Raiblocks - Wallet Gen</title>
+	<link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>Paper Wallet Generator</h1>
+	</header>
+	<main>
+		<form class="input">
+			<input type="text" id="seed" placeholder="Input some random numbers or move your mouse">
+			<button id="reset">reset</button>
+		</form>
+
+		<div id="loadbar-info" style="display: none">
+			<h4 class="percent">0%</h4>
+			<div id="bar">
+				<div id="load-bar"></div>
+			</div>
+		</div>
+
+		<div id="connect-error" style="display: none">
+			<h4 style="color: red">Please, open your RCP connection and input your ip and port</h4>
+			<label for="ip">Ip:</label>
+			<input id="ip" type="text" value="127.0.0.1" style="display: block">
+			<label for="port">Port: </label>
+			<input id="port" type="text" value="7076" style="display: block">
+			<button onclick="connectionTest()" style="float: right">send</button>
+		</div>
+
+		<img id="mouse-img" class="left" style="display: none; transition: 500ms; margin-top: 5em" src="img/mouse-outline.png" width="100">
+		<div class="account-info" style="display: none">
+			<div class="info">
+				<h3>Public Key</h3>
+				<div id="qr-public" class="qr"></div>
+				<h4 id="public"></h4>
+			</div>
+			<div class="info">
+				<h3>Private Key</h3>
+				<div id="qr-private" class="qr"></div>
+				<h4 id="private"></h4>
+			</div>
+			<div class="info">
+				<h3>Account</h3>
+				<div id="qr-account" class="qr"></div>
+				<h4 id="account"></h4>
+			</div>
+		</div>
+	</main>
+	<script src="js/jquery.js"></script>
+	<script src="js/mouse-animation.js"></script>
+	<script src="js/number-gen.js"></script>
+	<script src="js/create-wallet.js"></script>
+	<script src="js/qrcode.min.js"></script>
+	<script src="js/load-bar.js"></script>
+	<script src="js/reset.js"></script>
+	<script src="js/conection-test.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body{
+	background-color: #adddff;
+}
+header h1{
+	text-align: center;
+	font-family: sans-serif;
+	color: #666666;
+	font-size: 2.6em
+}
+.input{
+	width: 30em;
+	margin: 0 auto;
+	margin-top: 5em;
+}	#seed{
+		display: inline-block;
+		width: 80%;
+		padding: 0.4em;
+		border: 0.2em solid grey;
+		border-radius: 0;
+	}
+
+#connect-error{
+	width: 17em;
+	margin: 0 auto;
+	margin-top: 5em;
+}
+
+#bar{
+	width: 800px;
+	height: 2em;
+	margin: 0 auto;
+	background-color: white;
+	border: 0.1em solid whitesmoke;
+}	#load-bar{
+	position: relative;
+	z-index: 1;
+	width: 0%; 
+	height: 100%;
+	background-color: red;
+}
+
+.right{
+	margin-left: 50%;
+}
+
+.left{
+	margin-left: 45%;
+}
+
+.percent{
+	margin-top: 5em;
+	text-align: center;
+}
+.account-info{
+	margin-left: 30%;
+	margin-top: 3em;
+	font-family: sans-serif;
+}	.info div{
+		display: inline-block;
+		background-color: white;
+		position: relative;
+		left: 20%;
+		padding: 0.1em;
+		border: 0.3em solid #666666;
+	}
+	.info h3{}
